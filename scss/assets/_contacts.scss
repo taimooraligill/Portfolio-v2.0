@@ -1,0 +1,54 @@
+/* =================== CONTACT =================== */
+.contact{
+    background-color: $second-bg-color;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem 20% 1rem 17%;
+
+        .input__box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+
+            input{
+                width: 48%;
+                padding: 1.5rem;
+                font-size: $normal-font-size;
+                color: $text-color;
+                background-color: $second-bg-color;
+                border-radius: 1.5rem;
+                border: 2px solid $main-color;
+                margin: 1rem 0;
+                resize: none;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            padding: 1.5rem;
+            font-size: $normal-font-size;
+            color: $text-color;
+            background-color: $second-bg-color;
+            border-radius: 1rem;
+            border: 2px solid $main-color;
+            margin: 1rem 0;
+            resize: none;
+        }
+
+        .input__group-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .btn{
+                width: 100%;
+                border-radius: .6rem;
+            }
+        }
+    }
+}

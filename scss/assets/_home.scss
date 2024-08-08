@@ -1,0 +1,19 @@
+/*=============== HOME ===============*/
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+    // position: relative;
+
+
+    .home__container{
+        flex: 1.5;
+    }
+
+    .profile{
+        flex: 1;
+    }
+
+}

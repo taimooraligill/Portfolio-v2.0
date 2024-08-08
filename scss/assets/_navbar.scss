@@ -1,0 +1,110 @@
+// @import 'mixins';
+
+/*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 1rem;
+    background-color: transparent;
+    z-index: $z-fixed;
+
+    .nav{
+        position: relative;
+        height: $header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__logo{
+            font-weight: $font-semi-bold;
+            color: $main-color;
+            font-size: $big-font-size;
+            letter-spacing: 2px;
+        }
+        
+        .nav__actions{
+          font-size: 1.25rem;
+          column-gap: .5rem;
+          align-items: center;
+      
+          .nav__toggle{
+            font-size: 2.4rem;
+          }
+        }
+        /* Show menu */
+          .show__menu{
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: hsla(228, 24%, 66%, .2);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            width: 70%;
+            height: 100%;
+            padding: 10rem 5rem 0;
+            transition: right .4s;
+          }
+
+        #nav-menu{
+
+          .nav__list{
+            display: flex;
+            // flex-direction: column;
+            row-gap: 5rem;
+
+            .nav__item{
+              
+              .nav__link{
+                color: $text-color;
+                font-weight: $font-semi-bold;
+                transition: color .4s;
+                letter-spacing: 1px;
+                font-size: calc($medium-font-size - .4rem);
+              }
+            
+              .nav__link:hover,
+              .nav__link:active{
+                color: $main-color;
+              }
+            }
+          }
+
+          .nav__close{
+              position: absolute;
+              top: 1.5rem;
+              right: 3rem;
+              font-size: 3rem;
+          }
+        }
+    }
+  }
+
+.nav__logo,
+.nav__close,
+.nav__toggle,
+.nav__actions {
+  display: flex;
+  color: $text-color;
+  cursor: pointer;
+}
+
+/* Add blur header */
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(228, 24%, 6%, .2);
+  backdrop-filter:  blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+/* Active link */
+.active{
+  color: $main-color;
+}

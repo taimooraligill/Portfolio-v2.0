@@ -1,0 +1,37 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100..900&display=swap");
+
+/*============== VARIABLES SCSS ===============*/
+$header-height: 3.5rem;
+
+/*========== Colors ==========*/
+$bg-color: #000428;
+$second-bg-color: #050930;
+$main-color: hsl(36, 90%, 54%);
+$text-color: hsl(0, 0%, 100%);
+
+/* $gradient-bg:  rgb(5,11,56); */
+$gradient-bg: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+/*========== Font and typography ==========*/
+$body-font: "Montserrat", sans-serif;
+$second-font: "Dancing Script", cursive;
+$biggest-font-size: 5rem;
+$extra-big-font-size: 3rem;
+$big-font-size: 2.4rem;
+$medium-font-size: 2rem;
+$normal-font-size: 1.4rem;
+$small-font-size: 1rem; 
+
+/*========== Font weight ==========*/
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+/*========== GAPS ==========*/
+
+
+/*========== z index ==========*/
+$z-negative: 10;
+$z-fixed: 100;
+  

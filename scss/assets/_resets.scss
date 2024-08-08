@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: $text-color;
+}
+  
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+    color: $text-color;
+}
+
+body {
+  font-family: $body-font;
+  background-color: $bg-color;
+  color: $text-color;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

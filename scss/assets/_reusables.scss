@@ -1,0 +1,88 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+section{
+    min-height: 100vh;
+}
+
+.container{
+    padding: 8rem 4vw 5rem 8rem;
+    background: $gradient-bg;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: $font-bold;
+    line-height: 1.3;
+    letter-spacing: 3px;
+}
+
+h2{
+    text-align: center;
+    font-size: 5.5rem;
+    line-height: 1.3;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+    font-weight: $font-bold;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+span {
+    color: $main-color;
+}
+
+p {
+    font-size: $normal-font-size;
+    text-align: justify;
+    margin-block: 3rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 2.8rem;
+    background: $main-color;
+    color: $second-bg-color;
+    border-radius: 2rem;
+    box-shadow: 0 0 .6rem $main-color;
+    border: 3px solid $main-color;
+    font-size: $normal-font-size;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .4s ease;
+}
+  
+.btn:hover{
+    box-shadow: none;
+    background: transparent;
+    color: $main-color;
+    border: 3px solid $main-color;
+
+}
+
+/* ================ PROFILE IMAGE ================ */
+
+.profile img{
+    width: 30vw;
+    border-radius: 50%;
+    border: 8px solid $main-color;
+}
+
+
+/* SCROLLBAR SETTING */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}

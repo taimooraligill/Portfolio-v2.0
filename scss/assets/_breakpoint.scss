@@ -1,0 +1,152 @@
+/* ================== BREAKPOINTS ==================== */
+
+@media screen and (min-width: 1150px){
+    html{
+      font-size: 65%;
+    }
+  
+    .nav{
+        height: 3.5rem;
+
+        .nav__actions{
+            font-size: 2.5rem;
+            column-gap: 1rem;
+        }
+
+        .nav__menu{
+            width: initial;
+
+            .nav__list{
+                flex-direction: row;
+                column-gap: 4.5rem;
+            }
+        }
+
+        .nav__actions .nav__toggle,
+        .nav__menu .nav__close{
+            display: none;
+        }
+
+    }
+  
+}
+
+@media screen and (max-width: 768px){
+
+    .about__container h2,
+    .services h2,
+    .skills__container h2,
+    .projects h2,
+    .contact h2{
+        font-size: 4.5rem;
+        margin-block: 3rem;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        row-gap: 4rem;
+
+        .home__container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h1{
+                font-size: $extra-big-font-size;
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            h3{
+                font-size: $normal-font-size;
+            }
+
+            .btn{
+                text-align: center;
+                width: 40%;
+                margin-inline: auto;
+            }
+        }
+        
+    }
+
+    .about{
+
+        flex-direction: column;
+
+        .about__container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 3rem;
+            p{
+                margin-block: 0;
+                // line-height: 2.5rem;
+            }
+            .btn{
+                margin-inline: auto;
+            }
+        }
+    }
+    .services .service__box h3{
+        font-size: $big-font-size;
+    }
+    .skills{
+
+        .skills__container{
+
+            .skills__box{
+                gap: 1rem;
+    
+                .info{
+                    p{
+                    font-size: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        form{
+            .input__group{
+
+                .input__box{
+
+                    input{
+                        width: 100%;
+                        margin: .75rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header {
+        .nav{
+            .nav__menu{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                background-color: hsla(228, 24%, 66%, .2);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                width: 80%;
+                height: 100%;
+                padding: 6rem 3rem 0;
+                transition: right .4s;
+
+            }
+            #nav-menu{
+                .nav__list{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

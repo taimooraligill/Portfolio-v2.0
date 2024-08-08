@@ -1,0 +1,58 @@
+
+/*==================== FOOTER ====================*/
+
+.footer{
+    background-color: $bg-color;
+    padding: 3rem 0 0 0;
+    position: relative;
+
+    .footer__list{
+        text-align: center;
+        font-weight: $font-semi-bold;
+        transition: color .4s;
+        letter-spacing: 1px;
+        font-size: calc($medium-font-size - .4rem);
+
+        li{
+            display: inline-block;
+            margin-left: 20px;
+
+            a{
+                color: $text-color;
+                border-bottom: 3px solid transparent;
+                transition: 0.3s ease;
+            }
+            a:hover{
+                color: $main-color
+            }
+
+            a:hover{
+                border-bottom: 3px solid $bg-color;
+            }
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: $normal-font-size;
+        margin-block: 2rem 0;
+    }
+
+    .footer__icon a{
+        display: inline-flex;
+        justify-content: flex-end;
+
+        i{
+            font-size: $medium-font-size;
+            font-weight: 700;
+            color: $bg-color;
+            background-color: $main-color;
+            padding: .6rem;
+            border-radius: .6rem;
+            cursor: pointer;
+            position: absolute;
+            right: 3%;
+            top: 40%;
+        }
+    }
+}
